@@ -5,109 +5,31 @@
 2 info using npm@3.10.10
 3 info using node@v6.11.0
 4 verbose publish [ '.' ]
-5 silly cache add args [ '.', null ]
-6 verbose cache add spec .
-7 silly cache add parsed spec Result {
-7 silly cache add   raw: '.',
-7 silly cache add   scope: null,
-7 silly cache add   escapedName: null,
-7 silly cache add   name: null,
-7 silly cache add   rawSpec: '.',
-7 silly cache add   spec: 'c:\\work\\v-debounce',
-7 silly cache add   type: 'directory' }
-8 verbose addLocalDirectory C:\Users\cn2929\AppData\Roaming\npm-cache\v-debounce\0.1.1\package.tgz not in flight; packing
-9 verbose correctMkdir C:\Users\cn2929\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-10 info lifecycle v-debounce@0.1.1~prepublish: v-debounce@0.1.1
-11 silly lifecycle v-debounce@0.1.1~prepublish: no script for prepublish, continuing
-12 verbose tar pack [ 'C:\\Users\\cn2929\\AppData\\Roaming\\npm-cache\\v-debounce\\0.1.1\\package.tgz',
-12 verbose tar pack   'c:\\work\\v-debounce' ]
-13 verbose tarball C:\Users\cn2929\AppData\Roaming\npm-cache\v-debounce\0.1.1\package.tgz
-14 verbose folder c:\work\v-debounce
-15 verbose addLocalTarball adding from inside cache C:\Users\cn2929\AppData\Roaming\npm-cache\v-debounce\0.1.1\package.tgz
-16 verbose correctMkdir C:\Users\cn2929\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-17 silly cache afterAdd v-debounce@0.1.1
-18 verbose afterAdd C:\Users\cn2929\AppData\Roaming\npm-cache\v-debounce\0.1.1\package\package.json not in flight; writing
-19 verbose correctMkdir C:\Users\cn2929\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-20 verbose afterAdd C:\Users\cn2929\AppData\Roaming\npm-cache\v-debounce\0.1.1\package\package.json written
-21 silly publish { name: 'v-debounce',
-21 silly publish   version: '0.1.1',
-21 silly publish   description: 'Input debounce directive for Vue.js',
-21 silly publish   main: 'index.js',
-21 silly publish   scripts:
-21 silly publish    { dev: 'vue build docs.vue',
-21 silly publish      'docs:build': 'vue build ./docs.vue --config ./docs.build.js --dist ./docs/ --prod',
-21 silly publish      'docs:serve': 'open http://localhost:5000/docs/ && serve ./' },
-21 silly publish   keywords:
-21 silly publish    [ 'vuejs',
-21 silly publish      'vuejs2',
-21 silly publish      'vuejs debounce',
-21 silly publish      'debounce',
-21 silly publish      'directive',
-21 silly publish      'input' ],
-21 silly publish   author: { name: 'None' },
-21 silly publish   license: 'MIT',
-21 silly publish   readme: '# v-debounce\r\n\r\nDebounce directive for Vue2 to debounce input typing. Forked originally from https://github.com/vuejs-tips/v-debounce\r\nUpdated to include support for IE\r\n\r\n## Usage\r\n\r\n**Template:**\r\n\r\nAdd an input in your template that uses the directive. For example a search field like this:\r\n\r\n```\r\n<input v-model.lazy="term" v-debounce="delay" placeholder="Search for something" />\r\n```\r\n\r\nIn your script section, customize delay and keep track of when term changes, which in this case is 1 second after input has stopped.\r\n\r\n**Script:**\r\n\r\n```\r\n<script>\r\nexport default {\r\n  name: \'example\',\r\n  data () {\r\n    return {\r\n      delay: 1000,\r\n      term: \'\',\r\n    }\r\n  },\r\n  watch: {\r\n    term () {\r\n      // Do something with search term after it debounced\r\n      console.log(`Search term changed to ${this.term}`)\r\n    }\r\n  },\r\n  directives: {\r\n    debounce\r\n  }\r\n}\r\n</script>\r\n```\r\n',
-21 silly publish   readmeFilename: 'README.md',
-21 silly publish   gitHead: '67c31b6cb7a983c96de5c2fb82678221ceebce29',
-21 silly publish   _id: 'v-debounce@0.1.1',
-21 silly publish   _shasum: '02a9a6d43f95dfe096810fa5f1b6134e329d038d',
-21 silly publish   _from: '.' }
-22 verbose getPublishConfig undefined
-23 silly mapToRegistry name v-debounce
-24 silly mapToRegistry using default registry
-25 silly mapToRegistry registry https://registry.npmjs.org/
-26 silly mapToRegistry data Result {
-26 silly mapToRegistry   raw: 'v-debounce',
-26 silly mapToRegistry   scope: null,
-26 silly mapToRegistry   escapedName: 'v-debounce',
-26 silly mapToRegistry   name: 'v-debounce',
-26 silly mapToRegistry   rawSpec: '',
-26 silly mapToRegistry   spec: 'latest',
-26 silly mapToRegistry   type: 'tag' }
-27 silly mapToRegistry uri https://registry.npmjs.org/v-debounce
-28 verbose publish registryBase https://registry.npmjs.org/
-29 silly publish uploading C:\Users\cn2929\AppData\Roaming\npm-cache\v-debounce\0.1.1\package.tgz
-30 verbose request uri https://registry.npmjs.org/v-debounce
-31 verbose request sending authorization for write operation
-32 info attempt registry request try #1 at 09:05:11
-33 verbose request using bearer token for auth
-34 verbose request id 29a31ac7f466a640
-35 http request PUT https://registry.npmjs.org/v-debounce
-36 http 403 https://registry.npmjs.org/v-debounce
-37 verbose headers { 'content-type': 'application/json',
-37 verbose headers   'cache-control': 'max-age=300',
-37 verbose headers   'content-length': '95',
-37 verbose headers   'accept-ranges': 'bytes',
-37 verbose headers   date: 'Wed, 23 Aug 2017 07:05:13 GMT',
-37 verbose headers   via: '1.1 varnish',
-37 verbose headers   connection: 'keep-alive',
-37 verbose headers   'x-served-by': 'cache-bma7034-BMA',
-37 verbose headers   'x-cache': 'MISS',
-37 verbose headers   'x-cache-hits': '0',
-37 verbose headers   'x-timer': 'S1503471912.071698,VS0,VE1415',
-37 verbose headers   vary: 'Accept-Encoding, Accept' }
-38 verbose request invalidating C:\Users\cn2929\AppData\Roaming\npm-cache\registry.npmjs.org\v-debounce on PUT
-39 error publish Failed PUT 403
-40 verbose stack Error: "You cannot publish over the previously published version 0.1.1." : v-debounce
-40 verbose stack     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:302:12)
-40 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:290:14)
-40 verbose stack     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:210:14)
-40 verbose stack     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:187:22)
-40 verbose stack     at emitTwo (events.js:106:13)
-40 verbose stack     at Request.emit (events.js:191:7)
-40 verbose stack     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1048:10)
-40 verbose stack     at emitOne (events.js:96:13)
-40 verbose stack     at Request.emit (events.js:188:7)
-40 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:969:12)
-41 verbose statusCode 403
-42 verbose pkgid v-debounce
-43 verbose cwd c:\work\v-debounce
-44 error Windows_NT 6.3.9600
-45 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
-46 error node v6.11.0
-47 error npm  v3.10.10
-48 error code E403
-49 error "You cannot publish over the previously published version 0.1.1." : v-debounce
-50 error If you need help, you may report this error at:
-50 error     <https://github.com/npm/npm/issues>
-51 verbose exit [ 1, true ]
+5 verbose stack Error: Failed to parse json
+5 verbose stack Unexpected token 'h' at 15:4
+5 verbose stack   "homepage": "https://retrospirit.net",
+5 verbose stack    ^
+5 verbose stack     at parseError (C:\Program Files\nodejs\node_modules\npm\node_modules\read-package-json\read-json.js:390:11)
+5 verbose stack     at parseJson (C:\Program Files\nodejs\node_modules\npm\node_modules\read-package-json\read-json.js:79:23)
+5 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-package-json\read-json.js:48:5
+5 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\graceful-fs\graceful-fs.js:78:16
+5 verbose stack     at tryToString (fs.js:456:3)
+5 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:443:12)
+6 verbose cwd c:\work\v-debounce
+7 error Windows_NT 6.3.9600
+8 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+9 error node v6.11.0
+10 error npm  v3.10.10
+11 error file c:\work\v-debounce\package.json
+12 error code EJSONPARSE
+13 error Failed to parse json
+13 error Unexpected token 'h' at 15:4
+13 error   "homepage": "https://retrospirit.net",
+13 error    ^
+14 error File: c:\work\v-debounce\package.json
+15 error Failed to parse package.json data.
+15 error package.json must be actual JSON, not just JavaScript.
+15 error
+15 error This is not a bug in npm.
+15 error Tell the package author to fix their package.json file. JSON.parse
+16 verbose exit [ 1, true ]
