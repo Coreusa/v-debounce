@@ -41,4 +41,5 @@ export default {
 ```
 
 **Report issues:**
+
 https://github.com/hydraheim/v-debounce/issues
