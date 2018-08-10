@@ -1,4 +1,4 @@
-const debounce = require('./debounce')
+var debounce = require('./debounce')
 
 directive.debounce = debounce
 
