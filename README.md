@@ -1,7 +1,7 @@
 # v-debounce
 
 Debounce directive for Vue2 to debounce input typing. Forked originally from https://github.com/vuejs-tips/v-debounce
-Updated to include support for IE.
+Updated to include support for IE 10+.
 
 ## Usage
 
