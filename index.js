@@ -22,4 +22,7 @@ function createNewEvent(eventName) {
   return e
 }
 
-module.exports = directive
+module.exports = {
+  install: (Vue) => { Vue.directive('debounce', directive) },
+  directive
+}

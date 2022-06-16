@@ -1,9 +1,10 @@
-module.exports = function debounce (fn, delay) {
-  var timeoutID = null
+module.exports = function (fn, delay) {
+  let timeoutID = null
+
   return function () {
     clearTimeout(timeoutID)
-    var args = arguments
-    var that = this
+    const args = arguments
+    const that = this
     timeoutID = setTimeout(function () {
       fn.apply(that, args)
     }, delay)
