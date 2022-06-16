@@ -4,9 +4,9 @@ module.exports = function (fn, delay) {
   return function () {
     clearTimeout(timeoutID)
     const args = arguments
-    const that = this
+    const self = this
     timeoutID = setTimeout(function () {
-      fn.apply(that, args)
+      fn.apply(self, args)
     }, delay)
   }
 }
