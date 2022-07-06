@@ -120,3 +120,6 @@ export default {
 **Report issues:**
 
 https://github.com/coreusa/v-debounce/issues
+
+### License
+This repository is licensed under a [MIT license](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt).
